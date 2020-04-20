@@ -1,0 +1,683 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200420.001919.89407.0.001.json",
+    "dumpEventTime": "2020-04-20T00:19:19Z",
+    "dumpEventTimeStamp": "1587356359982",
+    "processId": 89407,
+    "threadId": null,
+    "cwd": "/Users/acasarsa/development/mod3/js-looping-and-iteration-looping-code-along-nyc-web-030920",
+    "commandLine": [
+      "/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node",
+      "/Users/acasarsa/development/mod3/js-looping-and-iteration-looping-code-along-nyc-web-030920/node_modules/mocha/bin/_mocha",
+      "-R",
+      "mocha-multi",
+      "--reporter-options",
+      "spec=-,json=.results.json"
+    ],
+    "nodejsVersion": "v13.9.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "13.9.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.9.0/node-v13.9.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.9.0/node-v13.9.0.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "19.3.0",
+    "osVersion": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 379931950,
+        "nice": 0,
+        "sys": 122454370,
+        "idle": 506511850,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 52042750,
+        "nice": 0,
+        "sys": 27247080,
+        "idle": 929358900,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 352907330,
+        "nice": 0,
+        "sys": 99735510,
+        "idle": 556081150,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 53481190,
+        "nice": 0,
+        "sys": 21227030,
+        "idle": 933926500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 340639010,
+        "nice": 0,
+        "sys": 87342530,
+        "idle": 580710990,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 56545690,
+        "nice": 0,
+        "sys": 20025790,
+        "idle": 932049060,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 342011770,
+        "nice": 0,
+        "sys": 74576270,
+        "idle": 592075220,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 59886850,
+        "nice": 0,
+        "sys": 19326270,
+        "idle": 929393380,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "c4:b3:01:b7:42:8f",
+        "address": "fe80::1871:46d6:3cf9:468a",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "c4:b3:01:b7:42:8f",
+        "address": "192.168.1.6",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "5e:63:eb:a3:00:6a",
+        "address": "fe80::5c63:ebff:fea3:6a",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 9
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "5e:63:eb:a3:00:6a",
+        "address": "fe80::5c63:ebff:fea3:6a",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 10
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::3577:71d7:da5b:f201",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::67d2:dd46:42a9:4698",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "utun2",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::9d78:e636:8030:44b4",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 13
+      },
+      {
+        "name": "utun3",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::28b3:ef7b:fbe4:5507",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      }
+    ],
+    "host": "MacBook-Pro-2.home"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00000001001a038c",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100093d77",
+      "symbol": "node::OnFatalError(char const*, char const*) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001001d40f7",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001001d4093",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100356b65",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100358244",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100354fde",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100352fc6",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010035e94a",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010035e9d1",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010032bd16",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010066bb68",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001009a7dd9",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2156314624,
+    "totalCommittedMemory": 2154633816,
+    "usedMemory": 2149474296,
+    "availableMemory": 45069400,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 4718592,
+        "committedMemory": 3418368,
+        "capacity": 2356704,
+        "used": 1348800,
+        "available": 1007904
+      },
+      "old_space": {
+        "memorySize": 2016817152,
+        "committedMemory": 2016783576,
+        "capacity": 2014492200,
+        "used": 2014288080,
+        "available": 204120
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 407648,
+        "capacity": 365824,
+        "used": 365824,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1839104,
+        "committedMemory": 1743344,
+        "capacity": 1266000,
+        "used": 1266000,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 132198400,
+        "committedMemory": 132198400,
+        "capacity": 132169768,
+        "used": 132169768,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2356704,
+        "used": 0,
+        "available": 2356704
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 63.3271,
+    "kernelCpuSeconds": 2.41977,
+    "cpuConsumptionPercent": 252.873,
+    "maxRss": 2410336485376,
+    "pageFaults": {
+      "IORequired": 32,
+      "IONotRequired": 707623
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "npm_config_save_dev": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_dry_run": "",
+    "npm_config_viewer": "man",
+    "npm_config_only": "",
+    "npm_config_commit_hooks": "true",
+    "npm_config_browser": "",
+    "npm_package_gitHead": "f2a4f8d4179d1ac894890aff19dbe07f0aabd802",
+    "npm_package_dependencies_mocha": "^5.2.0",
+    "npm_config_also": "",
+    "rvm_use_flag": "",
+    "npm_config_sign_git_commit": "",
+    "npm_config_rollback": "true",
+    "rvm_bin_path": "/Users/acasarsa/.rvm/bin",
+    "TERM_PROGRAM": "vscode",
+    "NODE": "/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node",
+    "npm_config_usage": "",
+    "npm_config_audit": "true",
+    "INIT_CWD": "/Users/acasarsa/development/mod3/js-looping-and-iteration-looping-code-along-nyc-web-030920",
+    "npm_package_homepage": "https://github.com/learn-co-curriculum/js-looping-and-iteration-looping-code-along#readme",
+    "rvm_quiet_flag": "",
+    "GEM_HOME": "/Users/acasarsa/.rvm/gems/ruby-2.6.1",
+    "NVM_CD_FLAGS": "-q",
+    "npm_config_globalignorefile": "/Users/acasarsa/.nvm/versions/node/v13.9.0/etc/npmignore",
+    "rvm_gemstone_url": "",
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh",
+    "npm_config_shell": "/bin/zsh",
+    "npm_config_maxsockets": "50",
+    "npm_config_init_author_url": "",
+    "npm_config_shrinkwrap": "true",
+    "npm_config_parseable": "",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "rvm_docs_type": "",
+    "IRBRC": "/Users/acasarsa/.rvm/rubies/ruby-2.6.1/.irbrc",
+    "TMPDIR": "/var/folders/kk/s5xk6cyn48g3w08p6lz4_c380000gn/T/",
+    "npm_config_timing": "",
+    "npm_config_init_license": "ISC",
+    "npm_config_if_present": "",
+    "TERM_PROGRAM_VERSION": "1.44.2",
+    "npm_package_dependencies_mocha_multi": "^1.0.1",
+    "npm_config_sign_git_tag": "",
+    "npm_config_init_author_email": "",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_preid": "",
+    "npm_config_long": "",
+    "npm_config_local_address": "",
+    "npm_config_git_tag_version": "true",
+    "npm_config_cert": "",
+    "rvm_hook": "",
+    "MY_RUBY_HOME": "/Users/acasarsa/.rvm/rubies/ruby-2.6.1",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_noproxy": "",
+    "npm_config_fetch_retries": "2",
+    "npm_package_dependencies__babel_preset_env": "^7.4.5",
+    "npm_package_repository_url": "git+https://github.com/learn-co-curriculum/js-looping-and-iteration-looping-code-along.git",
+    "npm_config_versions": "",
+    "npm_config_message": "%s",
+    "npm_config_key": "",
+    "npm_package_readmeFilename": "README.md",
+    "GIT_EDITOR": "atom",
+    "npm_package_description": "Learn.co's introduction to looping in JavaScript.",
+    "NVM_DIR": "/Users/acasarsa/.nvm",
+    "SVN_EDITOR": "atom",
+    "USER": "acasarsa",
+    "npm_package_license": "SEE LICENSE IN LICENSE.md",
+    "rvm_gemstone_package_file": "",
+    "USR_PATHS": "/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin",
+    "npm_config_globalconfig": "/Users/acasarsa/.nvm/versions/node/v13.9.0/etc/npmrc",
+    "npm_config_prefer_online": "",
+    "npm_config_logs_max": "10",
+    "npm_config_always_auth": "",
+    "rvm_path": "/Users/acasarsa/.rvm",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.DeH9ZnkRuo/Listeners",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+    "npm_execpath": "/Users/acasarsa/.nvm/versions/node/v13.9.0/lib/node_modules/npm/bin/npm-cli.js",
+    "npm_config_global_style": "",
+    "npm_config_cache_lock_retries": "10",
+    "rvm_proxy": "",
+    "npm_config_update_notifier": "true",
+    "npm_config_cafile": "",
+    "rvm_ruby_file": "",
+    "npm_package_author_name": "Flatiron School",
+    "npm_config_heading": "npm",
+    "npm_config_audit_level": "low",
+    "npm_config_searchlimit": "20",
+    "npm_config_read_only": "",
+    "npm_config_offline": "",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "rvm_silent_flag": "",
+    "rvm_prefix": "/Users/acasarsa",
+    "npm_config_json": "",
+    "npm_config_access": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"test\"],\"original\":[\"test\"]}",
+    "rvm_ruby_make": "",
+    "PATH": "/Users/acasarsa/.nvm/versions/node/v13.9.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/acasarsa/development/mod3/js-looping-and-iteration-looping-code-along-nyc-web-030920/node_modules/.bin:/Users/acasarsa/.nvm/versions/node/v13.9.0/bin:/Users/acasarsa/.rvm/gems/ruby-2.6.1/bin:/Users/acasarsa/.rvm/gems/ruby-2.6.1@global/bin:/Users/acasarsa/.rvm/rubies/ruby-2.6.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/acasarsa/.rvm/bin:/Users/acasarsa/.rvm/bin",
+    "npm_config_allow_same_version": "",
+    "npm_package_dependencies__babel_core": "^7.4.5",
+    "npm_config_https_proxy": "",
+    "npm_config_engine_strict": "",
+    "npm_config_description": "true",
+    "_": "/Users/acasarsa/development/mod3/js-looping-and-iteration-looping-code-along-nyc-web-030920/node_modules/.bin/mocha",
+    "npm_config_userconfig": "/Users/acasarsa/.npmrc",
+    "npm_config_init_module": "/Users/acasarsa/.npm-init.js",
+    "npm_package_dependencies_jsdom": "^9.0",
+    "npm_package_keywords_4": "looping",
+    "npm_config_cidr": "",
+    "npm_package_dependencies_file_system": "^2.2.2",
+    "npm_package_keywords_5": "learn.co",
+    "PWD": "/Users/acasarsa/development/mod3/js-looping-and-iteration-looping-code-along-nyc-web-030920",
+    "npm_config_user": "501",
+    "npm_config_node_version": "13.9.0",
+    "npm_package_bugs_url": "https://github.com/learn-co-curriculum/js-looping-and-iteration-looping-code-along/issues",
+    "npm_package_keywords_6": "flatiron school",
+    "npm_lifecycle_event": "test",
+    "npm_package_keywords_7": "code-along",
+    "EDITOR": "atom",
+    "npm_config_save": "true",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_editor": "atom",
+    "npm_config_auth_type": "legacy",
+    "npm_package_keywords_0": "javascript",
+    "npm_package_repository_type": "git",
+    "npm_package_name": "js-looping-and-iteration-looping-code-along",
+    "rvm_sdk": "",
+    "LANG": "en_US.UTF-8",
+    "npm_config_tag": "latest",
+    "npm_config_script_shell": "",
+    "npm_package_keywords_1": "for",
+    "npm_config_progress": "true",
+    "npm_config_global": "",
+    "npm_config_before": "",
+    "npm_package_dependencies_chai": "^4.2.0",
+    "npm_package_keywords_2": "while",
+    "NODE_PATH": "/usr/local/lib/node_modules:/usr/local/lib/node_modules:",
+    "npm_config_searchstaleness": "900",
+    "npm_config_optional": "true",
+    "npm_config_ham_it_up": "",
+    "npm_package_keywords_3": "loops",
+    "XPC_FLAGS": "0x0",
+    "npm_config_save_prod": "",
+    "npm_config_force": "",
+    "npm_config_bin_links": "true",
+    "npm_config_searchopts": "",
+    "GIT_MERGE_AUTOEDIT": "no",
+    "npm_config_node_gyp": "/Users/acasarsa/.nvm/versions/node/v13.9.0/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "npm_config_depth": "Infinity",
+    "npm_package_main": "index.js",
+    "npm_config_sso_poll_frequency": "500",
+    "npm_config_rebuild_bundle": "true",
+    "npm_package_dependencies_mocha_jsdom": "~1.1.0",
+    "npm_package_version": "0.1.0",
+    "XPC_SERVICE_NAME": "0",
+    "npm_config_unicode": "true",
+    "rvm_version": "1.29.9-next (master)",
+    "rvm_script_name": "",
+    "rvm_pretty_print_flag": "",
+    "SHLVL": "2",
+    "HOME": "/Users/acasarsa",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_package_scripts_test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json",
+    "rvm_ruby_mode": "",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_strict_ssl": "true",
+    "npm_config_sso_type": "oauth",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_save_prefix": "^",
+    "npm_config_loglevel": "notice",
+    "npm_config_ca": "",
+    "npm_config_save_exact": "",
+    "npm_config_group": "20",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_dev": "",
+    "npm_config_version": "",
+    "npm_config_prefer_offline": "",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_otp": "",
+    "npm_config_cache_min": "10",
+    "npm_package_dependencies_sinon": "^7.3.1",
+    "npm_config_searchexclude": "",
+    "npm_config_cache": "/Users/acasarsa/.npm",
+    "LOGNAME": "acasarsa",
+    "npm_lifecycle_script": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json",
+    "npm_config_color": "true",
+    "rvm_alias_expanded": "",
+    "VISUAL": "atom",
+    "npm_config_proxy": "",
+    "npm_config_package_lock": "true",
+    "GEM_PATH": "/Users/acasarsa/.rvm/gems/ruby-2.6.1:/Users/acasarsa/.rvm/gems/ruby-2.6.1@global",
+    "npm_config_package_lock_only": "",
+    "npm_config_fund": "true",
+    "npm_config_save_optional": "",
+    "NVM_BIN": "/Users/acasarsa/.nvm/versions/node/v13.9.0/bin",
+    "npm_config_ignore_scripts": "",
+    "npm_config_user_agent": "npm/6.13.7 node/v13.9.0 darwin x64",
+    "rvm_nightly_flag": "",
+    "npm_config_cache_lock_wait": "10000",
+    "rvm_ruby_make_install": "",
+    "npm_config_production": "",
+    "rvm_niceness": "",
+    "FLATIRON_VERSION": "1.1.1",
+    "DISPLAY": "/private/tmp/com.apple.launchd.D3qlFzUVS2/org.macosforge.xquartz:0",
+    "npm_config_send_metrics": "",
+    "npm_config_save_bundle": "",
+    "rvm_ruby_bits": "",
+    "npm_config_umask": "0022",
+    "npm_config_node_options": "",
+    "npm_config_init_version": "1.0.0",
+    "rvm_bin_flag": "",
+    "npm_config_init_author_name": "",
+    "npm_config_git": "git",
+    "npm_config_scope": "",
+    "rvm_only_path_flag": "",
+    "RUBY_VERSION": "ruby-2.6.1",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_tmp": "/var/folders/kk/s5xk6cyn48g3w08p6lz4_c380000gn/T",
+    "npm_config_onload_script": "",
+    "npm_node_execpath": "/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node",
+    "npm_config_prefix": "/Users/acasarsa/.nvm/versions/node/v13.9.0",
+    "npm_config_link": "",
+    "npm_config_format_package_lock": "true",
+    "COLORTERM": "truecolor",
+    "LOADED_MOCHA_OPTS": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 24576,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 2784,
+      "hard": 4176
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/acasarsa/.nvm/versions/node/v13.9.0/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib"
+  ]
+}
